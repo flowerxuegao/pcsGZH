@@ -1,0 +1,96 @@
+body,html{
+	width:100%;
+	height:100%;
+}
+.tjbjContain{
+	width:100%;
+	
+}
+.formBox{
+	background:#fff;
+	padding:0.4rem 0.4rem 1.5rem;
+	line-height:40px;
+	
+}
+.formgroup{
+	border-bottom:0.01rem solid #d5d5d5;
+	overflow: hidden;;
+}
+.formgroup:last-child{
+	border-bottom:0;
+}
+.formgroup>label{
+	display:inline-block;
+	width:20%;
+	float:left;
+}
+.formgroup>input{
+	border:0;
+	display:inline-block;
+	line-height: 37px;
+    width: 75%;
+    float: right;
+	font-size:0.42rem;
+	padding-left:10px;
+}
+.timeBox>input{
+	width:50%;
+}
+.timeBox>div{
+	width:75%;
+	float:right;
+}
+.timeBox>div input{
+	width:49%;
+	font-size:0.42rem;
+	float:left;
+	border:0;
+	height: 1rem;
+	line-height: 37px;
+}
+
+.sczjBobx{
+	background:#fff;
+	padding:0.6rem 0.4rem;
+	margin-top:0.3rem;
+}
+.sczjBobx span{
+	width:0.14rem;
+	height:0.42rem;
+	background:#3fa4e8;
+	display:block;
+	float:left;
+	border-radius:5px;
+	margin-right:5px;
+	margin-top: 2px;
+	
+}
+.sczjButton{
+	display:flex;
+}
+.sczjButton li{
+	flex: 1;
+	text-align: center;
+}
+.submitBox{
+	width:100%;
+	padding:0 0.4rem;
+	box-sizing: border-box;
+}
+.submitBaojing{
+	width:100%;
+	text-align: center;
+	background:#3fa4e8;
+	border:0;
+	color:#fff;
+	height:1.1rem;
+	border-radius:4px;
+	
+}
+input[type='date']{
+	background:#fff;
+}
+.sczjButton img{
+	width:1.27rem;
+	margin: 0.5rem 0 0.2rem;
+}

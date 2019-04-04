@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/tjbj.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="tjbjContain">
+			<div class="formBox">
+				<form action="">
+					<div class="formgroup">
+						<label for="">姓名</label>
+						<input type="text" value = "匿名" readonly="readonly"/>
+					</div>
+					<div class="formgroup">
+						<label for="">联系电话</label>
+						<input type="text" readonly="readonly" value = "13603511234"/>
+					</div>
+					<div class="formgroup">
+						<label for="">发生时间</label>
+						<input readonly class="fashengtime" type="text" id="date4" placeholder="YYYY-MM-DD hh:mm:ss">
+						
+					</div>
+					<div class="formgroup">
+						<label for="">事件地点</label>
+						<input type="text" placeholder = "请输入详细地址"/>
+					</div>
+					<div class="formgroup">
+						<label for="">报警内容</label>
+						<input type="text"  placeholder = "请输入报警内容"/>
+					</div>
+				</form>
+			</div>
+			<div class="sczjBobx">
+				<div><span></span>上传证据</div>
+				<ul class = "sczjButton">
+					<li>
+						<img src="img/photo.png" alt="" />
+						<div>照片</div>
+					</li>
+					<li>
+						<img src="img/shipin.png" alt="" />
+						<div>视频</div>
+					</li>
+					<li>
+						<img src="img/luyin.png" alt="" />
+						<div>录音</div>
+					</li>
+				</ul>
+			</div>
+			<div class="submitBox">
+				<input class = "submitBaojing" type="button" value = "提交报警"/>
+			</div>
+			
+		</div>
+	<script src = "js/zepto.min.js"></script>
+	<script src = "js/rem.js"></script>
+	<script src = "js/rolldate.min.js"></script>
+	<script>
+		$(function(){
+			var marginTopNum = $('body').height()-$(".formBox").height()-$(".sczjBobx").height()-$(".submitBox").height();
+//			console.log();
+			marginTopNum = marginTopNum/100+0.8;
+			$(".submitBox").css("marginTop",marginTopNum+'rem');
+			
+			
+			
+			//时间处理部分
+			
+			new rolldate.Date({
+			 	el:'#date4',
+				format:'YYYY-MM-DD hh:mm:ss',
+				beginYear:2000,
+				endYear:2100
+			 })
+			
+			
+			function add(m){
+			    return m<10?'0'+m:m
+			}
+			function fortime(date){
+			    var y = date.getFullYear();
+			    var m = date.getMonth()+1;
+			    var d = date.getDate();
+			    var h = date.getHours();
+			    var mm = date.getMinutes();
+			    var s = date.getSeconds();
+			    return(y+'-'+add(m)+'-'+add(d)+' '+add(h)+':'+add(mm)+':'+add(s));
+			}
+			
+			var date = new Date(new Date().getTime() + (1000 * 60 * 60 * 72));
+			var date_str = fortime(date);
+		
+			$(".fashengtime").attr("placeholder",date_str);
+			
+
+		})
+	</script>
+	</body>
+</html>

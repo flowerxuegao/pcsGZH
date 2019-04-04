@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/liantiao.css" />
+		<link rel="stylesheet" href="font/iconfont.css" />
+		<title>联调单位</title>
+	</head>
+	<body>
+		<div class="liantiaoBox">
+			<ul>
+				<li class = "firstMunu">
+					<div>法院、司法所（一般民事纠纷、经济纠纷等）<span class = "iconfont icon-down-trangle"></span></div>
+					<ul class = "picBox">
+						<li>
+							<img src="img/banner.png" alt="" />
+							<div><span class = "names">张晓磊</span><span class = "phones">13834599306</span></div>
+						</li>
+						<li>
+							<img src="img/banner.png" alt="" />
+							<div><span class = "names">张晓磊</span><span class = "phones">13834599306</span></div>
+						</li>
+					</ul>
+				</li>
+				<li class = "firstMunu">
+					<div>社保局（劳资纠纷）<span class = "iconfont icon-down-trangle"></span></div>
+					<ul class = "picBox">
+						<li>
+							<img src="img/banner.png" alt="" />
+							<div><span class = "names">张晓磊</span><span class = "phones">13834599306</span></div>
+						</li>
+						<li>
+							<img src="img/banner.png" alt="" />
+							<div><span class = "names">张晓磊</span><span class = "phones">13834599306</span></div>
+						</li>
+					</ul>
+				</li>
+				<li class = "firstMunu">
+					<div>民政局（婚姻纠纷）<span class = "iconfont icon-down-trangle"></span></div>
+				</li>
+				<li class = "firstMunu">
+					<div>国土住建局（拆迁纠纷等）<span class = "iconfont icon-down-trangle"></span></div>
+				</li>
+				
+				
+				<li class = "firstMunu">
+					<div>消协（购物退换货纠纷、产品质量问题纠纷）<span class = "iconfont icon-down-trangle"></span></div>
+				</li>
+				<li class = "firstMunu">
+					<div>教育局<span class = "iconfont icon-down-trangle"></span></div>
+				</li>
+				<li class = "firstMunu">
+					<div>交警（交通事故）<span class = "iconfont icon-down-trangle"></span></div>
+				</li>
+				
+			</ul>
+			
+		</div>
+		<div class="addCompany">
+			<div><span class = "iconfont icon-add"></span>添加单位</div>
+		</div>
+	
+	<script src = "js/jquery-1.10.2.js"></script>
+	<script src = "js/zepto.min.js"></script>
+	<script src = "js/rem.js"></script>
+
+	<script>
+		$(function(){
+			$(".firstMunu>div").on("click", function() {
+		        $(this).next().slideToggle();
+		        $(this).parent(".firstMunu").toggleClass("cur");
+		        $(this).parent(".firstMunu").siblings().removeClass("cur");		        				$(this).parent(".firstMunu").siblings().find(".picBox").slideUp();
+		    })
+			
+
+		})
+		
+
+	</script>
+	</body>
+</html>

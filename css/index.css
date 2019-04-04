@@ -1,0 +1,57 @@
+
+.banner{
+	width:100%;
+	height:4.13rem;
+	
+}
+.banner img{
+	width:100%;
+}
+.navBox{
+	background:#fff;
+	margin-top:0.3rem;
+	padding: 0.5rem 0.4rem;
+}
+.navBox img{
+	width:1rem;
+	display:block;
+	margin:0 auto;
+	margin-bottom:0.15rem;
+}
+.navBox ul,.footbox ul{
+	display: flex;
+	width:100%;
+}
+.navBox ul{
+	margin-top: 0.4rem;
+}
+.navBox ul li,.footbox ul li{
+	text-align: center;
+	flex: 1;
+	
+}
+.navBox ul li a,.footbox ul li a{
+	display:block;
+	width:100%;
+}
+.navInfo{
+	line-height: 30px;
+    margin-bottom: 0.1rem;
+}
+.footer{
+	border-top:0.01rem solid #d1d1d1;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	background:#fff;
+	height:1.4rem;
+	
+}
+.footer a{
+	display:block;
+	width:100%;
+	line-height:1.4rem;
+}
+
+
+

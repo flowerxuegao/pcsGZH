@@ -1,0 +1,49 @@
+.liantiaoBox{
+	width:100%;
+}
+.liantiaoBox ul{
+	overflow: hidden;
+}
+.liantiaoBox ul>li,.addCompany{
+	line-height:1.4rem;
+	background:#fff;
+	padding:0 0.4rem;
+	margin-bottom:0.15rem;
+}
+.liantiaoBox ul li span{
+	float:right;
+}
+.addCompany{
+	text-align: center;
+}
+.picBox{
+	width:100%;
+	display:none;
+}
+.liantiaoBox .picBox>li{
+	border-top:1px solid #d1d1d1;
+	margin-bottom:0;
+}
+.picBox>li{
+	overflow: hidden;
+}
+.picBox>li img{
+	width:1.44rem;
+	height:1.44rem;
+	margin-top:0.35rem;
+	border-radius:50%;
+	float:left;
+}
+.picBox>li div{
+	float:left;
+	margin-left:0.74rem;
+}
+.picBox>li div .names,.picBox>li div .phones{
+	line-height:2.14rem;
+	float:left;
+}
+.picBox>li div .phones{
+	color:#0086e1;
+	margin-left:0.44rem;
+}
+
